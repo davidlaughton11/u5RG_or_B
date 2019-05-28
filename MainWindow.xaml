@@ -1,0 +1,19 @@
+﻿<Window x:Class="u5RG_or_B.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:u5RG_or_B"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock TextWrapping="Wrap">A row of five grey square tiles is to have a number of its tiles replaced with coloured oblong 
+            tiles chosen from red (length two), green (length three), or blue (length four). How many different ways can the grey tiles 
+            in a row measuring fifty units in length be replaced if colours cannot be mixed and at least one coloured 
+            tile must be used?</TextBlock>
+        <TextBlock>Enter Number of grey tiles to see how many ways they can be replaced by one colour.  By David Laughton</TextBlock>
+        <TextBox x:Name="txtNumInput">50</TextBox>
+        <Button x:Name="btnStart" Click="BtnStart_Click" Height="44">Click to run</Button>
+        <Label x:Name="lblOutput"></Label>
+    </StackPanel>
+</Window>
